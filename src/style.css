@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  /*### Primary*/
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  /* ### Neutral */
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--LightGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-areas: "main main" " subscription whyus";
+    grid-template-rows: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero > :nth-child(1){
+    grid-area: main;
+    background-color: white;
+}
+.hero > :nth-child(2){
+    grid-area: subscription;
+    background-color: var(--Cyan);
+}
+
+.hero > :nth-child(3){
+    grid-area: whyus;
+    background-color: #4ABEBD;
+}
+
+.attribution {
+  font-size: .9rem;
+  text-align: center;
+}
+.attribution a {
+  color: tomato;
+}
