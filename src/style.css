@@ -29,28 +29,93 @@ body {
 }
 
 .hero {
-    display: grid;
-    grid-template-areas: "main main" " subscription whyus";
-    grid-template-rows: 1fr 1.2fr;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-areas: "main main" " subscription whyus";
+  grid-template-rows: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
+  width: 40rem;
+  margin: 10vh 0 2vh 0;
 }
 
-.hero > :nth-child(1){
-    grid-area: main;
-    background-color: white;
+.hero > :nth-child(1) {
+  grid-area: main;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
-.hero > :nth-child(2){
-    grid-area: subscription;
-    background-color: var(--Cyan);
+.hero > :nth-child(1) > :first-child {
+  color: var(--Cyan);
 }
 
-.hero > :nth-child(3){
-    grid-area: whyus;
-    background-color: #4ABEBD;
+.hero > :nth-child(1) > :nth-child(2) {
+  color: var(--BrightYellow);
+  font-weight: bold;
+}
+.hero > :nth-child(1) > :nth-child(3) {
+  color: var(--GrayishBlue);
+  line-height: 1.8rem;
+}
+
+.hero > :nth-child(2) {
+  grid-area: subscription;
+  background-color: var(--Cyan);
+  padding: 2rem;
+  color: var(--LightGray);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 0 0.3rem;
+  gap: 1.2rem;
+}
+
+.hero > :nth-child(2) span {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.hero > :nth-child(2) > :nth-child(2) {
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.hero > :nth-child(2) .button a {
+  background-color: var(--BrightYellow);
+  text-decoration: none;
+  color: var(--LightGray);
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.hero > :nth-child(3) {
+  grid-area: whyus;
+  background-color: #4abebd;
+  padding: 2rem;
+  color: var(--LightGray);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0 0 0.3rem 0;
+}
+
+.hero > :nth-child(3) h2 {
+  font-size: 1.3rem;
+}
+
+.hero > :nth-child(3) ul > li {
+  line-height: 1.4rem;
+  font-weight: 250;
 }
 
 .attribution {
-  font-size: .9rem;
+  font-size: 1rem;
   text-align: center;
 }
 .attribution a {
