@@ -1,4 +1,4 @@
-# Recipe Landing Page
+# single-price-grid-component-master
 
 Este é um projeto de **landing page** simples, desenvolvido com **HTML** e **CSS**, destinado a aprender e praticar os conceitos básicos de desenvolvimento web.
 
